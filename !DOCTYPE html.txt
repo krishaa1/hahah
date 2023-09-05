@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nettside med bilde</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo">
+            <img src="https://ibb.co/pP1hjRJ" alt="Logo">
+        </a>
+    </header>
+    <main>
+        <div id="bilde-container">
+            <img src="https://ibb.co/nDWLJJr" alt="Bilde" id="bilde" style="display: none;">
+        </div>
+    </main>
+    <script>
+        var logo = document.getElementById("logo");
+        var bilde = document.getElementById("bilde");
+
+        logo.addEventListener("click", function () {
+            bilde.style.display = "block";
+        });
+    </script>
+</body>
+</html>
